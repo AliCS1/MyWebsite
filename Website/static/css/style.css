@@ -1,0 +1,27 @@
+body {
+    font-size:24px;
+    font-weight: 400;
+    
+    font-family: "PT Sans", sans-serif;
+}
+h1 {
+    color: #044c92;
+    font-size:24px;
+    line-height: 24px;
+}
+
+p {
+    color: #808080;
+    margin-bottom: 20px;
+    font-size:16px;
+    line-height: 22px;
+}
+.container {
+    margin-top:50px;
+    margin-left:200px;
+
+    margin-bottom:100px;
+    margin-right:200px;
+    d
+
+}
