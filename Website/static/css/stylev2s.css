@@ -1,3 +1,32 @@
+html {
+    overflow-x:hidden;
+}
+body {
+    background:white;
+    margin:0;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.page {
+    margin:0 auto;
+    padding:0;
+    width:100vw;
+    max-width:1920px;
+    height: 100vh;
+}
+
+.one {
+    background: linear-gradient(110deg, #fdcd3b 60%, #ffed4b 60%);
+}
+.two {
+    background: linear-gradient(70deg, #fff810 33%, rgba(0,0,0,0) 33%), linear-gradient(40deg,#63e89e 66%,#ff7ee3 66%);
+}
+.three {
+    background: linear-gradient(120deg, #0ff7ff 30%, rgba(0,0,0,0) 30%),
+    linear-gradient(80deg, #ff0ff7 60%, rgba(0,0,0,0) 60%),
+    linear-gradient(105deg, #f7ff0f 80%, #36fc33ef 80%);
+}
+/* css for practice version
 body {
     background: #242582;
     margin:0;
@@ -113,4 +142,4 @@ h1 {
     bottom:10px;
     margin:0;
     background:green;
-}
+}*/
