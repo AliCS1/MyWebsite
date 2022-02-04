@@ -7,6 +7,11 @@ body {
     margin: 0;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
+p {
+    margin: 0 15rem; 
+    text-align:center;
+    font-size:1.5rem;
+}
 
 .page {
     margin: 0 auto;
@@ -27,6 +32,7 @@ body {
     background: rgb(240, 240, 240);
     background: linear-gradient(70deg, #75E6DA 40%, #189AB4 40%);
     box-shadow: 0px 4px rgba(212, 241, 244, 0.5);
+    z-index:9999;
 }
 
 .center-of-top-bar {
@@ -46,7 +52,9 @@ body {
     display: flex;
     align-items: center;
 }
-
+.header-entry-container:hover {
+    color:yellow;
+}
 .logo-Circle {
     width: 70%;
     height: 70%;
@@ -87,6 +95,18 @@ body {
     justify-content: space-evenly;
 }
 
+.btn-data {
+    text-decoration:none;
+    font-size:2rem;
+    font-weight:800;
+    color:white;
+    display:flex;
+    flex-direction:column;
+}
+.btn-data:hover {
+    color:#05445E;
+}
+
 .logo {
     height: 100%;
     top: 0;
@@ -105,15 +125,12 @@ body {
 
 .Splitter {
     position: relative;
-    left: -20px;
-    top: -22px;
     width: 100%;
     height: 4px;
     background: rgba(212, 241, 244, 0.5);
 }
 
 .Section-1 {
-    padding: 20px;
     width: 100%;
     height: auto;
     height: 100vh;
@@ -122,6 +139,7 @@ body {
     justify-content: center;
     align-items: flex-start;
     background: linear-gradient(110deg, #189AB4 60%, #75E6DA 60%);
+    padding-bottom:10vh;
 }
 
 .Opener-Line {
@@ -132,7 +150,6 @@ body {
     font-weight: 800;
     display: flex;
     height: 80%;
-    padding-bottom: 200px;
     flex-direction: column;
     align-items: center;
 }
@@ -153,6 +170,7 @@ body {
 
 .Down-one {
     position: relative;
+    overflow:hidden;
     width: 50px;
     height: 50px;
     background: transparent;
@@ -161,11 +179,12 @@ body {
     left: 20px;
     border-left: none;
     border-top: none;
+    z-index:10;
 }
 
 .Section-2 {
-    padding: 20px;
     width: 100%;
+    min-height:100vh;
     height: auto;
     background: linear-gradient(70deg, #75E6DA 50%, #189AB4 50%);
     font-size: auto;
@@ -175,8 +194,21 @@ body {
     font-weight: 800;
 }
 
+.About-page {
+    color: #D4F1F4;
+    font: sans-serif;
+    font-size: 2rem;
+    font-weight: 800;
+    display:flex;
+    flex-direction:column;
+    margin-bottom:10vh;
+}
+
+.key-words {
+    color:#05445E;
+}
+
 .Section-3 {
-    padding: 20px;
     width: 100%;
     height: auto;
     font-size: auto;
@@ -185,6 +217,32 @@ body {
     font: sans-serif;
     font-size: 0.5rem;
     font-weight: 800;
+}
+
+.Skills-page{
+    color: #D4F1F4;
+    font: sans-serif;
+    font-size: 2rem;
+    font-weight: 800;
+    display:flex;
+    flex-direction:column;
+    margin-bottom:10vh;
+}
+
+.images-logo {
+    width:70%;
+    height:100px;
+    align-self:center;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    align-content:space-around;
+}
+
+.images {
+    height:100%;
+    object-fit:contain;
+    aspect-ratio:1px/1px;
 }
 
 .bottom {
