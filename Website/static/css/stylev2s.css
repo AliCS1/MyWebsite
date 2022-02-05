@@ -16,7 +16,12 @@ p {
     text-align: center;
     font-size: 1.5rem;
 }
-
+:root {
+    --primary-color:#189AB4;
+    --secondary-color:#83EEFF;
+    --accent-color:#094f6d;
+    --text-color:#D4F1F4;
+}
 .page {
     margin: 0 auto;
     padding: 0;
@@ -24,6 +29,16 @@ p {
     height: 100%;
     display: flex;
     flex-direction: column;
+}
+.page-style {
+    width: 100%;
+    min-height: 100vh;
+    color: var(--text-color);
+    font-size: 2rem;
+    font-weight: 800;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10vh;
 }
 
 .top-bar {
@@ -34,7 +49,7 @@ p {
     height: 80px;
     overflow: hidden;
     background: rgb(240, 240, 240);
-    background: linear-gradient(70deg, #75E6DA 40%, #189AB4 40%);
+    background: linear-gradient(70deg, var(--secondary-color) 40%, var(--primary-color) 40%);
     box-shadow: 0px 4px rgba(212, 241, 244, 0.5);
     z-index: 9999;
 }
@@ -65,7 +80,7 @@ p {
     width: 70%;
     height: 70%;
     background: transparent;
-    border: 5px solid #05445E;
+    border: 5px solid var(--accent-color);
     border-radius: 100%;
     overflow: hidden;
 }
@@ -76,7 +91,7 @@ p {
     top: 30px;
     width: 50px;
     height: 50px;
-    background: #189AB4;
+    background: var(--primary-color);
     transform: rotate(45deg);
 }
 
@@ -86,7 +101,7 @@ p {
     bottom: 20px;
     width: 100px;
     height: 100px;
-    background: #189AB4;
+    background: var(--primary-color);
     transform: rotate(45deg);
 }
 
@@ -111,7 +126,7 @@ p {
 }
 
 .btn-data:hover {
-    color: #05445E;
+    color: var(--primary-color);
 }
 
 .logo {
@@ -143,12 +158,11 @@ p {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    background: linear-gradient(110deg, #189AB4 60%, #75E6DA 60%);
+    background: linear-gradient(110deg, var(--primary-color) 60%, var(--secondary-color) 60%);
 }
 
 .Opener-Line {
     padding-top: 10vh;
-    color: #D4F1F4;
     font-size: 2rem;
     font-weight: 800;
     display: flex;
@@ -177,7 +191,7 @@ p {
     width: 50px;
     height: 50px;
     background: transparent;
-    border: 10px #05445E solid;
+    border: 10px var(--accent-color) solid;
     transform: rotate(45deg);
     left: 20px;
     border-left: none;
@@ -186,38 +200,26 @@ p {
 }
 
 .Section-2 {
-    background: linear-gradient(70deg, #75E6DA 50%, #189AB4 50%);
+    background: linear-gradient(70deg, var(--secondary-color) 50%, var(--primary-color) 50%);
     font-size: auto;
-    color: #D4F1F4;
+    color: var(--secondary-color);
     font-size: 0.5rem;
     font-weight: 800;
 }
 
-.page-style {
-    width: 100%;
-    min-height: 100vh;
-    color: #D4F1F4;
-    font-size: 2rem;
-    font-weight: 800;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 10vh;
-}
 
-.abc {
-    
-}
+
 
 .key-words {
-    color: #05445E;
+    color: var(--accent-color);
 }
 
 .Section-3 {
     width: 100%;
     height: auto;
     font-size: auto;
-    background: linear-gradient(110deg, #189AB4 50%, #75E6DA 50%);
-    color: #D4F1F4;
+    background: linear-gradient(110deg, var(--primary-color) 50%,  var(--secondary-color) 50%);
+    color: var(--secondary-color);
     font-size: 0.5rem;
     font-weight: 800;
 }
@@ -286,8 +288,8 @@ p {
     width: 100%;
     height: auto;
     font-size: auto;
-    background: linear-gradient(35deg, #189AB4 50%, #75E6DA 50%);
-    color: #D4F1F4;
+    background: linear-gradient(35deg, var(--primary-color) 50%, var(--secondary-color) 50%);
+    color: var(--secondary-color);
     font-size: 0.5rem;
     font-weight: 800;
 }
@@ -296,8 +298,8 @@ p {
     width: 100%;
     height: auto;
     font-size: auto;
-    background: linear-gradient(120deg, #189AB4 50%, #75E6DA 50%);
-    color: #D4F1F4;
+    background: linear-gradient(120deg, var(--primary-color) 50%, var(--secondary-color) 50%);
+    color: var(--secondary-color);
     font-size: 0.5rem;
     font-weight: 800;
 }
