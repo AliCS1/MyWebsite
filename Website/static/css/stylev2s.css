@@ -5,12 +5,16 @@ html {
 body {
     background: white;
     margin: 0;
-    font-family: Georgia, 'Times New Roman', Times, serif;
 }
+
+h1 {
+    font-size: 0.8rem;
+}
+
 p {
-    margin: 0 15rem; 
-    text-align:center;
-    font-size:1.5rem;
+    margin: 0 15rem;
+    text-align: center;
+    font-size: 1.5rem;
 }
 
 .page {
@@ -32,7 +36,7 @@ p {
     background: rgb(240, 240, 240);
     background: linear-gradient(70deg, #75E6DA 40%, #189AB4 40%);
     box-shadow: 0px 4px rgba(212, 241, 244, 0.5);
-    z-index:9999;
+    z-index: 9999;
 }
 
 .center-of-top-bar {
@@ -52,9 +56,11 @@ p {
     display: flex;
     align-items: center;
 }
+
 .header-entry-container:hover {
-    color:yellow;
+    color: yellow;
 }
+
 .logo-Circle {
     width: 70%;
     height: 70%;
@@ -86,7 +92,7 @@ p {
 
 .top-bar-btn {
     height: 100%;
-    width: 50%;
+    width: 65%;
     right: 0;
     margin: 0 0 0 auto;
     display: flex;
@@ -96,15 +102,16 @@ p {
 }
 
 .btn-data {
-    text-decoration:none;
-    font-size:2rem;
-    font-weight:800;
-    color:white;
-    display:flex;
-    flex-direction:column;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: white;
+    display: flex;
+    flex-direction: column;
 }
+
 .btn-data:hover {
-    color:#05445E;
+    color: #05445E;
 }
 
 .logo {
@@ -115,12 +122,12 @@ p {
 
 .container {
     width: 100%;
-    max-width: 1920px;
     margin: 0 auto;
     padding-top: 80px;
     font-size: 20px;
     display: flex;
     flex-direction: column;
+    font-family: Times, serif, Georgia, 'Times New Roman';
 }
 
 .Splitter {
@@ -131,21 +138,17 @@ p {
 }
 
 .Section-1 {
-    width: 100%;
-    height: auto;
     height: 100vh;
     max-height: 1080px;
     display: flex;
     justify-content: center;
     align-items: flex-start;
     background: linear-gradient(110deg, #189AB4 60%, #75E6DA 60%);
-    padding-bottom:10vh;
 }
 
 .Opener-Line {
     padding-top: 10vh;
     color: #D4F1F4;
-    font: sans-serif;
     font-size: 2rem;
     font-weight: 800;
     display: flex;
@@ -156,7 +159,7 @@ p {
 
 .Scroll-For-Information {
     font-size: 1rem;
-    height: 50%;
+    height: 60%;
     display: flex;
     align-items: flex-end;
     align-self: center;
@@ -170,7 +173,7 @@ p {
 
 .Down-one {
     position: relative;
-    overflow:hidden;
+    overflow: hidden;
     width: 50px;
     height: 50px;
     background: transparent;
@@ -179,70 +182,89 @@ p {
     left: 20px;
     border-left: none;
     border-top: none;
-    z-index:10;
+    z-index: 10;
 }
 
 .Section-2 {
-    width: 100%;
-    min-height:100vh;
-    height: auto;
     background: linear-gradient(70deg, #75E6DA 50%, #189AB4 50%);
     font-size: auto;
     color: #D4F1F4;
-    font: sans-serif;
     font-size: 0.5rem;
     font-weight: 800;
 }
 
-.About-page {
+.page-style {
+    width: 100%;
+    min-height: 100vh;
     color: #D4F1F4;
-    font: sans-serif;
     font-size: 2rem;
     font-weight: 800;
-    display:flex;
-    flex-direction:column;
-    margin-bottom:10vh;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10vh;
+}
+
+.abc {
+    
 }
 
 .key-words {
-    color:#05445E;
+    color: #05445E;
 }
 
 .Section-3 {
     width: 100%;
     height: auto;
     font-size: auto;
-    background: linear-gradient(130deg, #189AB4 50%, #75E6DA 50%);
+    background: linear-gradient(110deg, #189AB4 50%, #75E6DA 50%);
     color: #D4F1F4;
-    font: sans-serif;
     font-size: 0.5rem;
     font-weight: 800;
 }
 
-.Skills-page{
-    color: #D4F1F4;
-    font: sans-serif;
-    font-size: 2rem;
-    font-weight: 800;
-    display:flex;
-    flex-direction:column;
-    margin-bottom:10vh;
+.Section-3-Center {
+    margin: 0 auto;
+    width: 75%;
+    height: auto;
+}
+
+.Skill-Container {
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    align-items: flex-start;
 }
 
 .images-logo {
-    width:70%;
-    height:100px;
-    align-self:center;
-    display:flex;
-    flex-direction:row;
-    justify-content:space-around;
-    align-content:space-around;
+    width: 70%;
+    height: 100px;
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: space-around;
 }
 
 .images {
-    height:100%;
-    object-fit:contain;
-    aspect-ratio:1px/1px;
+    position: relative;
+    height: 100%;
+    width: 20%;
+    object-fit: contain;
+    right: 0;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 0 auto;
+    align-self: flex-end;
+}
+
+.image {
+    align-self: center;
+    height: 100%;
+    width: 50%;
+    object-fit: contain;
 }
 
 .bottom {
@@ -258,6 +280,26 @@ p {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.Section-4 {
+    width: 100%;
+    height: auto;
+    font-size: auto;
+    background: linear-gradient(35deg, #189AB4 50%, #75E6DA 50%);
+    color: #D4F1F4;
+    font-size: 0.5rem;
+    font-weight: 800;
+}
+
+.Section-5 {
+    width: 100%;
+    height: auto;
+    font-size: auto;
+    background: linear-gradient(120deg, #189AB4 50%, #75E6DA 50%);
+    color: #D4F1F4;
+    font-size: 0.5rem;
+    font-weight: 800;
 }
 
 
