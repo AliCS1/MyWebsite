@@ -127,7 +127,7 @@ p {
 
 .btn-data {
     text-decoration: none;
-    font-size: max(1.3vw,2.6vh);
+    font-size: max(1.3vw,1.7vh);
     font-weight: 500;
     color: var(--text-color);
     display: flex;
