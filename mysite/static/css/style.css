@@ -1,0 +1,107 @@
+:root {
+  font-family: Graphik, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size:32px;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-family);
+}
+
+@media (min-width: 700px) {
+  .wrap {
+    margin: 0 10vw;
+  }
+  .header {
+    height:65px;
+  }
+  .header::after {
+  transform:translateX(-10vw);
+  }
+}
+
+.header {
+  height:150px;
+}
+.header::after {
+  position:absolute;
+  content: " ";
+  display:inline-block;
+  
+  width:100vw;
+  height:1px;
+  background:grey;
+}
+.header-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height:100%;
+}
+
+.header-button {
+  margin: auto;
+  font-size:1rem;
+  font-weight:500;
+  line-height:20px;
+}
+
+/* Typing Game */
+.type-game-container {
+  width: fit-content;
+  height: fit-content;
+  margin: 50px auto;
+  background: black;
+  border: green 1px solid;
+  padding: 10px;
+  font-weight: 1000;
+  font-size: 1em;
+}
+
+.type-container {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+.input-box-container {
+  width: 75%;
+}
+
+.input-box {
+  width: 100%;
+}
+
+.text-box {
+  display: inline-block;
+  font-size: 0px;
+  color: white;
+}
+
+.before {
+  color: green;
+  font-size: 25px;
+}
+.current {
+  font-size: 25px;
+}
+
+.after {
+  font-size: 25px;
+}
+
+.span {
+  display: inline-block;
+}
+
+/*Typing Game end */
