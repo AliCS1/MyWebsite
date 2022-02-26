@@ -1,4 +1,65 @@
 const body = document.body;
+/*
+toolbar = document.querySelector(".toolbar")
+
+toolbarWrap = document.querySelector(".toolbar-wrap")
+let toolbarClicked = true;
+let toolbarOpened = false;
+document.addEventListener("click", () => {
+  if (toolbarClicked == true){
+    if (toolbarWrap.classList.contains("hidden")) {
+      console.log("the toolbar is meant to be hidden")
+    }
+    toolbarWrap.className = "toolbar-wrap hidden";
+    
+  }else {
+    toolbarWrap.className = "toolbar-wrap"
+  }
+  console.log("clicked doucment")
+})
+toolbar.addEventListener("click", () => {
+  toolbarClicked = true;
+  if (toolbarOpened )
+})
+
+
+
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 const input = document.querySelector(".input-box");
 
@@ -69,7 +130,6 @@ let temp = "";
 textlist = [
   "The method takes 2 parameters: the start position, and the end position (end not included).This example slices out a portion of a string from position 7 to position 12 (13-1)",
 ];
-
 Start();
 
 /*

@@ -14,44 +14,52 @@ body {
   margin: 0;
   font-family: var(--font-family);
 }
-
-@media (min-width: 700px) {
-  .wrap {
-    margin: 0 10vw;
-  }
-  .header {
-    height:65px;
-  }
-  .header::after {
-  transform:translateX(-10vw);
-  }
+.hidden {
+  width:0px !important;
+  height:0px !important;
+  overflow:hidden !important;
 }
 
-.header {
-  height:150px;
+.header-wrap {
+  height:64px;
 }
-.header::after {
-  position:absolute;
-  content: " ";
-  display:inline-block;
-  
-  width:100vw;
-  height:1px;
-  background:grey;
-}
-.header-container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
+
+.toolbar {
   height:100%;
+  aspect-ratio:1;
+  border:none;
+  padding:0;
 }
 
-.header-button {
-  margin: auto;
-  font-size:1rem;
-  font-weight:500;
-  line-height:20px;
+.toolbar-wrap {
+  position:absolute;
+  top:0;
+  height:64px;
+  width:64px;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-evenly;
+  align-items:center;
+}
+
+.toolbar-line {
+  width:90%;
+  max-width:calc(64*0.9);
+  height:10px;
+  background:grey;
+  border-radius:10px;
+}
+.toolbar:focus {
+  width:500px;
+  height:100vh;
+}
+
+/* For > 750px width */
+
+@media (min-width:750px) {
+  body {
+    background:blue;
+  }
 }
 
 /* Typing Game */
