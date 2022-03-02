@@ -1,54 +1,207 @@
-{% load static %}
-<!--<a href = "/practice/"><img src="{% static '/img/LOGO.png' %}" style="width:auto; height: 48px;"></a>-->
 <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Portfolio Website</title>
+        {% load static %}
+        <link href="{% static 'css/style.css' %}" rel="stylesheet" />
+        <script src="{% static 'javascript/script.js' %}" defer></script>
+    </head>
 
-<!--THIS IS HOW TO MAKE A COMMENT-->
-<html>
-
-<head>
-    <meta charset="UTF-8">
-    <title>Personal Portfolio Website</title>
-    <link rel="stylesheet" href="{% static '/css/stylev2s.css' %}">
-</head>
-
-<body>
-    <div class="background one"></div>
-    <div class="background two"></div>
-    <div class="background three"></div>
-    <div class="page-header">
-        <div class="logo"><a href=/practice/>
-            <h2>IMAGE OF LOGO</h2>
-            </a>
-        </div>
-        <div class="rest-of-header">
-            <div class="page-header-main">a
-                <div class="header-entry-container">
-                    <h1>Contact</h1>
-                </div>
-                <div class="header-entry-container">
-                    <h1>Skills</h1>
-                </div>
-                <div class="header-entry-container">
-                    <h1>About</h1>
-                </div>
-                <div class="header-entry-container">
-                    <h1>Home</h1>
+    <body>
+        <section>
+            <h1>Hi, I'm Ali</h1>
+            <div class="about-container">
+                <h2 class="about">About</h2>
+            </div>
+            <div class="skills-container">
+                <h2 class="skills">Skills</h2>
+            </div>
+            <div class="projects-container">
+                <h2 class="projects">Projects</h2>
+            </div>
+            <div class="contact-container">
+                <h2 class="contact">Contact me</h2>
+            </div>
+        </section>
+        <section id="about">
+            <h2>Aspiring Software Engineer</h2>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Cupiditate ipsa voluptatibus, ullam ratione, vero error modi
+                architecto odio magnam mollitia nobis, maiores quas ea? Repellat
+                perferendis illo ullam impedit provident eos magni sint.
+                Possimus distinctio illum blanditiis explicabo ut hic tempora
+                voluptates repellat impedit, deleniti rem dolorem eveniet
+                dolorum quod.
+            </p>
+        </section>
+        <section id="skills">
+            <div class="container">
+                <h2>Skills</h2>
+                <div class="cards">
+                    <div class="text-card">
+                        <h3>Python</h3>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing
+                            elit. Dolores voluptates quam quo, impedit eaque
+                            nostrum mollitia eos maxime recusandae culpa eius
+                            enim deleniti velit ipsa quas? Explicabo fugit
+                            dolorum totam.
+                        </p>
+                        <img src="//unsplash.it/900" />
+                    </div>
+                    <div class="text-card">
+                        <h3>JavaScript</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Accusamus, deserunt? Voluptas ea sed eius,
+                            illo fugiat magnam sequi sunt minima commodi,
+                            consequatur placeat cum alias ex maiores eos nobis
+                            rem! Ad veniam quo molestias culpa, similique
+                            doloribus corrupti ullam accusamus.
+                        </p>
+                        <img src="//unsplash.it/900" />
+                    </div>
+                    <div class="text-card">
+                        <h3>HTML + CSS</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Accusamus, deserunt? Voluptas ea sed eius,
+                            illo fugiat magnam sequi sunt minima commodi,
+                            consequatur placeat cum alias ex maiores eos nobis
+                            rem! Ad veniam quo molestias culpa, similique
+                            doloribus corrupti ullam accusamus.
+                        </p>
+                        <img src="//unsplash.it/900" />
+                    </div>
+                    <div class="text-card">
+                        <h3>MySQL</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Accusamus, deserunt? Voluptas ea sed eius,
+                            illo fugiat magnam sequi sunt minima commodi,
+                            consequatur placeat cum alias ex maiores eos nobis
+                            rem! Ad veniam quo molestias culpa, similique
+                            doloribus corrupti ullam accusamus.
+                        </p>
+                        <img src="//unsplash.it/900" />
+                    </div>
+                    <div class="text-card">
+                        <h3>GitHub</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Accusamus, deserunt? Voluptas ea sed eius,
+                            illo fugiat magnam sequi sunt minima commodi,
+                            consequatur placeat cum alias ex maiores eos nobis
+                            rem! Ad veniam quo molestias culpa, similique
+                            doloribus corrupti ullam accusamus.
+                        </p>
+                        <img src="//unsplash.it/900" />
+                    </div>
+                    <div class="text-card">
+                        <h3>LeetCode</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Accusamus, deserunt? Voluptas ea sed eius,
+                            illo fugiat magnam sequi sunt minima commodi,
+                            consequatur placeat cum alias ex maiores eos nobis
+                            rem! Ad veniam quo molestias culpa, similique
+                            doloribus corrupti ullam accusamus.
+                        </p>
+                        <img src="//unsplash.it/900" />
+                    </div>
                 </div>
             </div>
-        </div>
-        <div></div>
-        <div class="container">
-            <div class="content">
-                <div class="page-one">
-                    <h1>Hello, My name is</h1>
-                    <h1>Ali Butt</h1>
+        </section>
+        <section id="projects">
+            <div class="container">
+                <h2>Projects</h2>
+                <div class="projects-list">
+                    <div class="project">
+                        <img src="//unsplash.it/900" />
+                        <div class="info-card">
+                            <h3>Typing Game</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Est repudiandae, aut expedita
+                                voluptates, fuga dicta, accusamus nemo officiis
+                                maiores quasi aperiam eligendi. Possimus
+                                repellendus quasi nam amet praesentium
+                                distinctio. Officiis hic odio neque ipsa enim
+                                laborum eius at iusto quod?
+                            </p>
+                            <div class="info-links">
+                                <a>GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <img src="//unsplash.it/900" />
+                        <div class="info-card">
+                            <h3>Chess</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Est repudiandae, aut expedita
+                                voluptates, fuga dicta, accusamus nemo officiis
+                                maiores quasi aperiam eligendi. Possimus
+                                repellendus quasi nam amet praesentium
+                                distinctio. Officiis hic odio neque ipsa enim
+                                laborum eius at iusto quod?
+                            </p>
+                            <div class="info-links">
+                                <a>GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <img src="//unsplash.it/900" />
+                        <div class="info-card">
+                            <h3>MineSweeper</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Est repudiandae, aut expedita
+                                voluptates, fuga dicta, accusamus nemo officiis
+                                maiores quasi aperiam eligendi. Possimus
+                                repellendus quasi nam amet praesentium
+                                distinctio. Officiis hic odio neque ipsa enim
+                                laborum eius at iusto quod?
+                            </p>
+                            <div class="info-links">
+                                <a>GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <img src="//unsplash.it/900" />
+                        <div class="info-card">
+                            <h3>This Website</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Est repudiandae, aut expedita
+                                voluptates, fuga dicta, accusamus nemo officiis
+                                maiores quasi aperiam eligendi. Possimus
+                                repellendus quasi nam amet praesentium
+                                distinctio. Officiis hic odio neque ipsa enim
+                                laborum eius at iusto quod?
+                            </p>
+                            <div class="info-links">
+                                <a>GitHub</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="page-two">FIRSTPAGE</div>
-                <div class="page-three">FIRSTPAGE</div>
             </div>
-
-        </div>
-    </div>
-</body>
-
+        </section>
+        <section id="contact">
+            <h2>Contact me</h2>
+            <div class="container">
+                <div>LinkedIn:</div>
+                <div>Email:</div>
+                <div>Phone Number:</div>
+                <div>GitHub:</div>
+                <div>LeetCode:</div>
+            </div>
+        </section>
+    </body>
 </html>
