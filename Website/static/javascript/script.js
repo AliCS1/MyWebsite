@@ -19,107 +19,6 @@ contactbtn.addEventListener("click",() => {
 })
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-
-<!-- Keyboard Game
-    <div class="type-game-container">
-      <div class="text-box">
-        <span class="before"></span>
-        <span class="current"> </span>
-        <span class="after"> </span>
-      </div>
-      <div class="type-container">
-        <div class="input-box-container">
-          <input type="text" class="input-box" />
-        </div>
-      </div>
-    </div>
-    -->
-
-
-
-    /* Typing Game */
-/*
-.type-game-container {
-  width: fit-content;
-  height: fit-content;
-  margin: 50px auto;
-  background: black;
-  border: green 1px solid;
-  padding: 10px;
-  font-weight: 1000;
-  font-size: 1em;
-}
-
-.type-container {
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 30px;
-}
-
-.input-box-container {
-  width: 75%;
-}
-
-.input-box {
-  width: 100%;
-}
-
-.text-box {
-  display: inline-block;
-  font-size: 0px;
-  color: white;
-}
-
-.before {
-  color: green;
-  font-size: 25px;
-}
-.current {
-  font-size: 25px;
-}
-
-.after {
-  font-size: 25px;
-}
-
-.span {
-  display: inline-block;
-}
-
-                       /*Typing Game end
-
-
-
-
-
 const input = document.querySelector(".input-box");
 
 let before = document.querySelector(".before");
@@ -129,7 +28,7 @@ let after = document.querySelector(".after");
 function GrabNextWord() {
   for (let i = 0; i < after.innerText.length; i++) {
     if (after.innerText[i] == " ") {
-      current.innerHTML = after.innerText.slice(0, i) + "&nbsp";
+      current.innerHTML = after.innerText.slice(0, i) + " ";
       after.innerHTML = after.innerText.slice(i + 1, after.innerText.length);
       return;
     }
@@ -187,7 +86,7 @@ function Endless() {
 
 let temp = "";
 textlist = [
-  "The method takes 2 parameters: the start position, and the end position (end not included).This example slices out a portion of a string from position 7 to position 12 (13-1)",
+  "The first ETF was the SPDR S&P 500 ETF (SPY), which tracks the S&P 500 Index, and which remains an actively traded ETF today.",
 ];
 
 Start();
