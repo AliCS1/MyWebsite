@@ -3,9 +3,8 @@
     <head>
         <meta charset="UTF-8" />
         <title>Portfolio Website</title>
-        {% load static %}
-        <link href="{% static 'css/style.css' %}" rel="stylesheet" />
-        <script src="{% static 'javascript/script.js' %}" defer></script>
+        <link href="../static/css/style.css" rel="stylesheet" />
+        <script src="../static/javascript/script.js" defer></script>
     </head>
 
     <body>
@@ -25,16 +24,51 @@
             </div>
         </section>
         <section id="about">
-            <h2>Aspiring Software Engineer</h2>
-            <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Cupiditate ipsa voluptatibus, ullam ratione, vero error modi
-                architecto odio magnam mollitia nobis, maiores quas ea? Repellat
-                perferendis illo ullam impedit provident eos magni sint.
-                Possimus distinctio illum blanditiis explicabo ut hic tempora
-                voluptates repellat impedit, deleniti rem dolorem eveniet
-                dolorum quod.
-            </p>
+            <div class="container">
+                <h2>Aspiring Software Engineer</h2>
+                <ul>
+                    <li>
+                        <strong>Strong</strong> problem solving skills with
+                        <span class="js">JavaScript</span> and
+                        <span class="py">Python</span>
+                    </li>
+                    <li>
+                        Able to design creative and unique websites using
+                        <span class="html">HTML</span>,
+                        <span class="css">CSS</span>,
+                        <span class="dom">DOM</span> (<span class="dom"
+                            >Document Object Model</span
+                        >) and
+                        <span class="js">JavaScript</span>
+                    </li>
+                    <li>
+                        Competitor in
+                        <span class="leetcode">LeetCode</span> competitions with
+                        a <span class="leetcode">Global Ranking</span> of
+                        90,000<small>th</small> out of 250,000 (<span
+                            class="leetcode"
+                            >Top 39%</span
+                        >
+                        World-Wide)
+                    </li>
+                    <li>
+                        Completed multiple Projects such as
+                        <span class="py">Chess</span>,
+                        <span class="py">MineSweeper</span>,
+                        <span class="js">Typing Game</span> and this
+                        <span class="html">w</span><span class="css">e</span
+                        ><span class="dom">b</span><span class="js">s</span
+                        ><span class="py">i</span><span class="css">t</span
+                        ><span class="html">e</span>
+                    </li>
+                </ul>
+                <h3>LeetCode Current Ranking:</h3>
+                <a href="https://leetcode.com/AliCS1/"
+                    ><img
+                        src="../static/imgs/LeetCode.png"
+                        alt="Image of Competition Results"
+                /></a>
+            </div>
         </section>
         <section id="skills">
             <div class="container">

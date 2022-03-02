@@ -4,6 +4,31 @@
 *::before,
 *::after {
     box-sizing: border-box;
+    color: inherit;
+}
+
+.js {
+    color: rgb(209, 178, 0);
+}
+
+.py {
+    color: rgb(55, 116, 167);
+}
+
+.html {
+    color: rgb(221, 75, 37);
+}
+
+.css {
+    color: rgb(38, 77, 228);
+}
+
+.dom {
+    color: rgb(192, 57, 54);
+}
+
+.leetcode {
+    color: rgb(255, 161, 22);
 }
 
 body {
@@ -20,6 +45,10 @@ section {
     align-items: center;
 }
 
+h2 {
+    font-size: 2rem;
+}
+
 section:nth-child(1) {
     color: #fff;
 }
@@ -30,6 +59,7 @@ section:nth-child(2) {
 
 section:nth-child(3) {
     color: #fff;
+    background: #ff5733;
 }
 
 section:nth-child(4) {
@@ -44,7 +74,7 @@ section:nth-child(5) {
 
 section .container {
     margin: 100px;
-    border: 5px red solid;
+    display: flex;
 }
 
 /*Section 1*/
@@ -198,4 +228,22 @@ section h1 {
 .contact:hover {
     transform: scale(1.2, 1.1);
     /*transform: rotate(20deg);*/
+}
+
+section:nth-child(2) .container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+section .container h2 {
+}
+section .container ul {
+    padding: 5vh 10% 10vh 10%;
+}
+
+section .container ul li {
+    font-size: 1.3rem;
+    margin: 1%;
+    list-style-type: upper-roman;
 }
