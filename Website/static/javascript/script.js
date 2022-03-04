@@ -18,6 +18,52 @@ contactbtn.addEventListener("click",() => {
   document.querySelector("#contact").scrollIntoView({behavior:'smooth'});
 })
 
+const appear = document.querySelectorAll(".appear");
+const c = function(entries){
+  entries.forEach(entry => {
+    if(entry.isIntersecting){
+      entry.target.classList.add('animate');
+    }
+  });
+}
+
+const i = new IntersectionObserver(c);
+
+//About Page
+for (let j=0;j<appear.length;j++) {
+ i.observe(appear[j])
+}
+
+const bar = document.querySelectorAll(".bar")
+const d = function(entries){
+  entries.forEach(entry => {
+    if(entry.isIntersecting){
+      if (number < 8) {
+        if (entry.target.classList.contains("exist")) {
+        }else {
+          
+      entry.target.classList.add(a);
+      entry.target.classList.add("exist");
+      a = a + count
+      console.log(a)
+      number += 1
+
+        }
+      }
+    }
+  });
+}
+let a = "animate-bar-i";
+let count = "i";
+let number = 0;
+const k = new IntersectionObserver(d)
+for (let j=0;j<bar.length;j++) {
+  k.observe(bar[j])
+}
+
+
+
+
 
 const input = document.querySelector(".input-box");
 
