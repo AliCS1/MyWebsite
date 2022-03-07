@@ -1,264 +1,240 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        {% load static %}
-        <meta charset="UTF-8" />
-        <title>Portfolio Website</title>
-        <link href="{% static '/css/style.css' %}" rel="stylesheet" />
-        <script src="{% static '/javascript/script.js' %}" defer></script>
-    </head>
+  <head>
+    {% load static %}
+    <meta charset="UTF-8" />
+    <title>Portfolio Website</title>
+    <link href="{% static '/css/style.css' %}" rel="stylesheet" />
+    <script src="{% static '/javascript/script.js' %}" defer></script>
+  </head>
 
-    <body>
-        <section>
-            <h1>Hi, I'm Ali</h1>
-            <div class="about-container">
-                <h2 class="about">About</h2>
+  <body>
+    <section>
+      <h1>Hi, I'm Ali</h1>
+      <div class="about-container">
+        <h2 class="about">About</h2>
+      </div>
+      <div class="skills-container">
+        <h2 class="skills">Skills</h2>
+      </div>
+      <div class="projects-container">
+        <h2 class="projects">Projects</h2>
+      </div>
+      <div class="contact-container">
+        <h2 class="contact">Contact me</h2>
+      </div>
+    </section>
+    <section id="about">
+      <div class="container">
+        <h2 class="appear">Aspiring Software Engineer</h2>
+        <ul class="appear">
+          <li>
+            <strong>Strong</strong> problem solving skills with
+            <span class="js">JavaScript</span> and
+            <span class="py">Python</span>
+          </li>
+          <li>
+            Able to design creative and unique websites using
+            <span class="html">HTML</span>, <span class="css">CSS</span>,
+            <span class="dom">DOM</span> (<span class="dom"
+              >Document Object Model</span
+            >) and
+            <span class="js">JavaScript</span>
+          </li>
+          <li>
+            Competitor in
+            <span class="leetcode">LeetCode</span> competitions with a
+            <span class="leetcode">Global Ranking</span> of 90,000<small
+              >th</small
+            >
+            out of 250,000 (<span class="leetcode">Top 39%</span>
+            Worldwide)
+          </li>
+          <li>
+            Completed multiple Projects such as
+            <span class="py">Chess</span>, <span class="py">MineSweeper</span>,
+            <span class="js">Typing Game</span> and this
+            <span class="html">w</span><span class="css">e</span
+            ><span class="dom">b</span><span class="js">s</span
+            ><span class="py">i</span><span class="css">t</span
+            ><span class="html">e</span>
+          </li>
+        </ul>
+        <h3 class="appear">LeetCode Current Ranking:</h3>
+        <a class="appear" href="https://leetcode.com/AliCS1/"
+          ><img
+            class="leetcode-image"
+            src="../static/imgs/LeetCode.png"
+            alt="Image of Competition Results"
+        /></a>
+      </div>
+    </section>
+    <section id="skills">
+      <div class="container">
+        <h2>Skills</h2>
+        <div class="graph-container">
+          <div class="data">
+            <div class="data-name">Python</div>
+            <div class="data-bar">
+              <div class="bar" style="width: 90%; background: #00a1a7"></div>
             </div>
-            <div class="skills-container">
-                <h2 class="skills">Skills</h2>
-            </div>
-            <div class="projects-container">
-                <h2 class="projects">Projects</h2>
-            </div>
-            <div class="contact-container">
-                <h2 class="contact">Contact me</h2>
-            </div>
-        </section>
-        <section id="about">
-            <div class="container">
-                <h2 class="appear">Aspiring Software Engineer</h2>
-                <ul class="appear">
-                    <li>
-                        <strong>Strong</strong> problem solving skills with
-                        <span class="js">JavaScript</span> and
-                        <span class="py">Python</span>
-                    </li>
-                    <li>
-                        Able to design creative and unique websites using
-                        <span class="html">HTML</span>,
-                        <span class="css">CSS</span>,
-                        <span class="dom">DOM</span> (<span class="dom"
-                            >Document Object Model</span
-                        >) and
-                        <span class="js">JavaScript</span>
-                    </li>
-                    <li>
-                        Competitor in
-                        <span class="leetcode">LeetCode</span> competitions with
-                        a <span class="leetcode">Global Ranking</span> of
-                        90,000<small>th</small> out of 250,000 (<span
-                            class="leetcode"
-                            >Top 39%</span
-                        >
-                        Worldwide)
-                    </li>
-                    <li>
-                        Completed multiple Projects such as
-                        <span class="py">Chess</span>,
-                        <span class="py">MineSweeper</span>,
-                        <span class="js">Typing Game</span> and this
-                        <span class="html">w</span><span class="css">e</span
-                        ><span class="dom">b</span><span class="js">s</span
-                        ><span class="py">i</span><span class="css">t</span
-                        ><span class="html">e</span>
-                    </li>
-                </ul>
-                <h3 class="appear">LeetCode Current Ranking:</h3>
-                <a class="appear" href="https://leetcode.com/AliCS1/"
-                    ><img
-                        class="leetcode-image"
-                        src="../static/imgs/LeetCode.png"
-                        alt="Image of Competition Results"
-                /></a>
-            </div>
-        </section>
-        <section id="skills">
-            <div class="container">
-                <h2>Skills</h2>
-                <div class="graph-container">
-                    <div class="data">
-                        <div class="data-name">Python
-                        </div>
-                        <div class="data-bar">
-                            <div class="bar" style="width:90%;background:#00a1a7;"></div>
-                        </div>
-                        <p>90%</p>
-                    </div>
-                    
-                    
-                    <div class="data">
-                        <div class="data-name">JavaScript
-                        </div>
-                        <div class="data-bar">
-                            <div class="bar" style="width:55%;background:#00a1a7;"></div>
-                        </div>
-                        <p>55%</p>
-                    </div>
-                    
-                    
-                    <div class="data">
-                        <div class="data-name">HTML
-                        </div>
-                        <div class="data-bar">
-                            <div class="bar" style="width:75%;background:#00a1a7;"></div>
-                        </div>
-                        <p>75%</p>
-                    </div>
-                    
-                    
-                    <div class="data">
-                        <div class="data-name">CSS
-                        </div>
-                        <div class="data-bar">
-                            <div class="bar" style="width:60%;background:#00a1a7;"></div>
-                        </div>
-                        <p>60%</p>
-                    </div>
-                    
-                    <div class="data">
-                        <div class="data-name">LeetCode
-                        </div>
-                        <div class="data-bar">
-                            <div class="bar" style="width:80%;background:#00a1a7;"></div>
-                        </div>
-                        <p>80%</p>
-                    </div>
-                    
-                    <div class="data">
-                        <div class="data-name">GitHub
-                        </div>
-                        <div class="data-bar">
-                            <div class="bar" style="width:55%;background:#00a1a7;"></div>
-                        </div>
-                        <p>55%</p>
-                    </div>
-                    
-                    <div class="data">
-                        <div class="data-name">Creativity
-                        </div>
-                        <div class="data-bar">
-                            <div class="bar" style="width:65%;background:#00a1a7;"></div>
-                        </div>
-                        <p>65%</p>
-                    </div>
-                    
-                    <div class="data">
-                        <div class="data-name">Problem Solving
-                        </div>
-                        <div class="data-bar">
-                            <div class="bar" style="width:75%;background:#00a1a7;"></div>
-                        </div>
-                        <p>75%</p>
-                    </div>
+            <p>90%</p>
+          </div>
 
+          <div class="data">
+            <div class="data-name">JavaScript</div>
+            <div class="data-bar">
+              <div class="bar" style="width: 55%; background: #00a1a7"></div>
+            </div>
+            <p>55%</p>
+          </div>
+
+          <div class="data">
+            <div class="data-name">HTML</div>
+            <div class="data-bar">
+              <div class="bar" style="width: 75%; background: #00a1a7"></div>
+            </div>
+            <p>75%</p>
+          </div>
+
+          <div class="data">
+            <div class="data-name">CSS</div>
+            <div class="data-bar">
+              <div class="bar" style="width: 60%; background: #00a1a7"></div>
+            </div>
+            <p>60%</p>
+          </div>
+
+          <div class="data">
+            <div class="data-name">LeetCode</div>
+            <div class="data-bar">
+              <div class="bar" style="width: 80%; background: #00a1a7"></div>
+            </div>
+            <p>80%</p>
+          </div>
+
+          <div class="data">
+            <div class="data-name">GitHub</div>
+            <div class="data-bar">
+              <div class="bar" style="width: 55%; background: #00a1a7"></div>
+            </div>
+            <p>55%</p>
+          </div>
+
+          <div class="data">
+            <div class="data-name">Creativity</div>
+            <div class="data-bar">
+              <div class="bar" style="width: 65%; background: #00a1a7"></div>
+            </div>
+            <p>65%</p>
+          </div>
+
+          <div class="data">
+            <div class="data-name">Problem Solving</div>
+            <div class="data-bar">
+              <div class="bar" style="width: 75%; background: #00a1a7"></div>
+            </div>
+            <p>75%</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="projects">
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="projects-list">
+          <div class="project">
+            <div class="project-image-container">
+              <img class="project-image" src="../static/imgs/Chess.png" />
+            </div>
+            <div class="info-card">
+              <h3>Chess</h3>
+              <h4>Made with Python, using the library PyGame</h4>
+              <p>
+                I used classes, attributes and methods to create functioning
+                pieces and to create the rules of the board.
+              </p>
+              <div class="info-links">
+                <h3>Source Code: <a href="">GitHub</a></h3>
+              </div>
+              
+              <div class="source-code-container">
+                <img class="project-image-source-code" src="../static/imgs/chess-code.png" /></div>
+            </div>
+          </div>
+          <div class="project">
+            <div class="info-card">
+              <h3>MineSweeper</h3>
+              <h4>Made with Python, using the library PyGame</h4>
+              <p>
+                I used classes, attributes and methods to create functioning
+                pieces and to create the rules of the board.
+              </p>
+              <div class="info-links">
+                <a>Source Code: GitHub</a>
+              </div>
+            </div>
+
+            <img class="project-image" src="//unsplash.it/900" />
+          </div>
+          <div class="project">
+            <div class="type-game-container">
+              <div class="text-box">
+                <span class="before"></span>
+                <span class="current"> </span>
+                <span class="after"> </span>
+              </div>
+              <div class="type-container">
+                <div class="input-box-container">
+                  <input type="text" class="input-box" />
                 </div>
+              </div>
             </div>
-        </section>
-        <section id="projects">
-            <div class="container">
-                <h2>Projects</h2>
-                <div class="projects-list">
-                    <div class="project">
-                        <div class="type-game-container">
-                            <div class="text-box">
-                                <span class="before"></span>
-                                <span class="current"> </span>
-                                <span class="after"> </span>
-                            </div>
-                            <div class="type-container">
-                                <div class="input-box-container">
-                                    <input type="text" class="input-box" />
-                                </div>
-                            </div>
-                        </div>
-                        <div class="info-card">
-                            <h3>Typing Game</h3>
-                            <h4>
-                                Made with HTML, CSS, JavaScript and Document
-                                Object Model
-                            </h4>
-                            <p>
-                                I created this game by splitting the paragraph
-                                into three sections, the words typed, the
-                                current word and the next words. Using
-                                JavaScript, I can check if the word being typed
-                                matches the current word, then I move the
-                                current word into the already typed section and
-                                grab the next word.
-                            </p>
-                            <div class="info-links">
-                                <a
-                                    >Source Code: Use inspect element to view
-                                    the game.</a
-                                >
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project">
-                        <div class="info-card">
-                            <h3>Chess</h3>
-                            <h4>Made with Python, using the library PyGame</h4>
-                            <p>
-                                I used classes, attributes and methods to create
-                                functioning pieces and to create the rules of
-                                the board.
-                            </p>
-                            <div class="info-links">
-                                <a>Source Code: GitHub</a>
-                            </div>
-                        </div>
+            <div class="info-card">
+              <h3>Typing Game</h3>
+              <h4>Made with HTML, CSS, JavaScript and Document Object Model</h4>
+              <p>
+                I created this game by splitting the paragraph into three
+                sections, the words typed, the current word and the next words.
+                Using JavaScript, I can check if the word being typed matches
+                the current word, then I move the current word into the already
+                typed section and grab the next word.
+              </p>
+              <div class="info-links">
+                <a>Source Code: Use inspect element to view the game.</a>
+              </div>
+            </div>
+          </div>
 
-                        <img class="project-image" src="//unsplash.it/900" />
-                    </div>
-                    <div class="project">
-                        <img class="project-image" src="//unsplash.it/900" />
-                        <div class="info-card">
-                            <h3>MineSweeper</h3>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Est repudiandae, aut expedita
-                                voluptates, fuga dicta, accusamus nemo officiis
-                                maiores quasi aperiam eligendi. Possimus
-                                repellendus quasi nam amet praesentium
-                                distinctio. Officiis hic odio neque ipsa enim
-                                laborum eius at iusto quod?
-                            </p>
-                            <div class="info-links">
-                                <a>GitHub</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project">
-                        <div class="info-card">
-                            <h3>This Website</h3>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Est repudiandae, aut expedita
-                                voluptates, fuga dicta, accusamus nemo officiis
-                                maiores quasi aperiam eligendi. Possimus
-                                repellendus quasi nam amet praesentium
-                                distinctio. Officiis hic odio neque ipsa enim
-                                laborum eius at iusto quod?
-                            </p>
-                            <div class="info-links">
-                                <a>GitHub</a>
-                            </div>
-                        </div>
+          <div class="project">
+            <div class="info-card">
+              <h3>This Website</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
+                repudiandae, aut expedita voluptates, fuga dicta, accusamus nemo
+                officiis maiores quasi aperiam eligendi. Possimus repellendus
+                quasi nam amet praesentium distinctio. Officiis hic odio neque
+                ipsa enim laborum eius at iusto quod?
+              </p>
+              <div class="info-links">
+                <a>GitHub</a>
+              </div>
+            </div>
 
-                        <img class="project-image" src="//unsplash.it/900" />
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="contact">
-            <h2>Contact me</h2>
-            <div class="container">
-                <div>LinkedIn:</div>
-                <div>Email:</div>
-                <div>Phone Number:</div>
-                <div>GitHub:</div>
-                <div>LeetCode:</div>
-            </div>
-        </section>
-    </body>
+            <img class="project-image" src="//unsplash.it/900" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <h2>Contact me</h2>
+      <div class="container">
+        <div>LinkedIn:</div>
+        <div>Email:</div>
+        <div>Phone Number:</div>
+        <div>GitHub:</div>
+        <div>LeetCode:</div>
+      </div>
+    </section>
+  </body>
 </html>
