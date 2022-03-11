@@ -75,16 +75,22 @@ section:nth-child(5) {
 }
 
 section .container {
-    margin: 100px;
+    margin: 100px 100px;
     display: flex;
     flex-direction: column;
     min-width: 80%;
 }
 
 @media (max-width: 750px) {
+<<<<<<< Updated upstream
     .container {
         margin: 0;
         min-width: 0;
+=======
+    section .container {
+        width:100%;
+        margin:100px 0;
+>>>>>>> Stashed changes
     }
 }
 
@@ -492,6 +498,7 @@ section .container ul li {
 }
 
 .project-image-container {
+<<<<<<< Updated upstream
     width: 55%;
 }
 .project-image {
@@ -499,6 +506,19 @@ section .container ul li {
     border-radius: 10px;
     max-height: 100%;
     max-width: 100%;
+=======
+    display:flex;
+    flex-direction:column;
+    width:55%;
+}
+.project-image {
+    border:1px black solid;
+    margin: 0 auto;
+    width:80%;
+    border-radius:10px;
+    flex-grow:5;
+
+>>>>>>> Stashed changes
 }
 .project-image-source-code {
     max-width: 100%;
@@ -509,6 +529,14 @@ section .container ul li {
 .source-code-container {
     overflow: auto;
 }
+<<<<<<< Updated upstream
+=======
+.project-image-description{
+    padding:5% 10% 0% 5%;
+    margin:0 auto;
+    flex-grow:1;
+}
+>>>>>>> Stashed changes
 
 /* TYPING GAME */
 .type-game-container {
